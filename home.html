@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>villa agency</title>
+  </head>
+  <body>
+    <header>
+      <div class="top-sect">
+        <div class="col">
+          <ul class="info">
+            <li>
+              <i class="bx bxs-envelope" style="color: #f35525"></i>
+              info@company.com
+            </li>
+            <li>
+              <i class="bx bxs-dashboard" style="color: #f35525"></i>
+              Sunny Isles Beach, FL 33160
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul class="social-links">
+            <li>
+              <a href=""
+                ><i class="bx bxl-facebook-circle" style="color: #fff"></i
+              ></a>
+            </li>
+            <li>
+              <a href=""><i class="bx bxl-twitter" style="color: #fff"></i></a>
+            </li>
+            <li>
+              <a href=""
+                ><i class="bx bxl-linkedin-square" style="color: #fff"></i
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                ><i class="bx bxl-instagram" style="color: #fff"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="mid-sec">
+        <nav>
+          <h1>VILLA</h1>
+          <ul class="tabs">
+            <li><a class="active" href="http://">Home</a></li>
+            <li><a href="">Properties</a></li>
+            <li><a href="">Property Details</a></li>
+            <li><a href="">Conatct Us</a></li>
+            <li>
+              <i class="bx bxs-gift" style="color: #fff"></i>
+              <a href="#">Schedule a visit</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="bottom-section">
+      <div class="embla">
+        <div class="embla__viewport">
+          <div class="embla__container">
+            <div class="embla__slide">
+              <img src="Images/assets.jpg" alt="" />
+            </div>
+            <div class="embla__slide">
+              <img src="Images/blog-18.jpg" alt="" />
+            </div>
+            <!-- <div class="embla__slide">Slide 3</div> -->
+          </div>
+        </div>
+        <button class="embla__prev">Prev</button>
+        <button class="embla__next">Next</button>
+      </div>
+    </div>
+    <div class="Featured">
+      <img src="Images/featured.jpg" alt="" />
+      <p>| Featured</p>
+      <h1>Best Appartment <br />& Sea view</h1>
+      .
+    </div>
+
+    <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+    <script src="https://unpkg.com/embla-carousel-autoplay/embla-carousel-autoplay.umd.js"></script>
+    <script type="text/javascript">
+      // Grab wrapper nodes
+      const rootNode = document.querySelector(".embla");
+      const viewportNode = rootNode.querySelector(".embla__viewport");
+
+      // Grab button nodes
+      const prevButtonNode = rootNode.querySelector(".embla__prev");
+      const nextButtonNode = rootNode.querySelector(".embla__next");
+
+      const options = { loop: true };
+      const plugins = [EmblaCarouselAutoplay()];
+      const emblaApi = EmblaCarousel(rootNode, options, plugins);
+      prevButtonNode.addEventListener("click", emblaApi.scrollPrev);
+      nextButtonNode.addEventListener("click", emblaApi.scrollNext);
+    </script>
+  </body>
+</html>

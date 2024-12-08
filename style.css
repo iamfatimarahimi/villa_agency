@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  
+  font-family: "Roboto", sans-serif;
+}
+header{
+    margin: 0 70px 0 70px;
+}
+a {
+  text-decoration: none;
+}
+.info {
+  display: flex;
+  list-style-type: none;
+  margin: 8px;
+}
+.info li {
+  padding-right: 25px;
+  color: #7a7a7a;
+}
+.info li:first-child {
+  border-right: 1px solid #eeeeee;
+}
+.info li:last-child {
+  padding-left: 15px;
+}
+.info .bx {
+  font-size: 25px;
+  padding: 10px;
+}
+.social-links {
+  list-style-type: none;
+  display: flex;
+  position: absolute;
+  right: 70px;
+}
+.social-links .bx {
+  font-size: 20px;
+  padding: 5px;
+  margin: 5px;
+  background: #cdcdcd;
+  border-radius: 50%;
+}
+.top-sect {
+  display: flex;
+}
+/* .mid-sec{
+    font-weight: 500;
+}
+nav{
+    display: flex;
+    position: fixed;
+}
+nav h1{
+    letter-spacing: 3px;
+    font-weight: 900;
+    color: #1e1e1e;
+}
+nav .tabs{
+    display: inline-flex;
+    list-style-type: none;
+}
+nav .tabs li a{
+    padding-right: 15px;
+    color: #000;
+    margin: 15px;
+}
+nav .tabs .active{
+    color: #f35525;
+}
+.tabs .bx{
+    background: #f35525;
+    font-size: 25px;
+    padding: 8px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.tabs li:last-child {
+    background: #1e1e1e;
+    border-radius: 200px;
+    
+}
+
+.tabs li:last-child a{
+    color: #fff;
+} */
+.mid-sec{
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  left: 0;
+  border-top: 1px solid #eeeeee;
+}
+nav {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.mid-sec h1 {
+  letter-spacing: 3px;
+  font-size: 28px;
+  font-weight: 800;
+  color: #1e1e1e;
+  margin-left: 100px;
+}
+
+.tabs {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.tabs li {
+  margin-left: 20px;
+}
+
+.tabs li:last-child {
+  margin-left: auto;
+}
+
+.tabs .active {
+  color: #f35525;
+}
+
+.tabs li:last-child {
+  background: #1e1e1e;
+  border-radius: 200px;
+}
+
+.tabs li:last-child a {
+  color: #fff;
+  position: relative;
+  top: -4px;
+}
+
+.tabs .bx {
+  background: #f35525;
+  font-size: 25px;
+  padding: 8px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.tabs a {
+  padding-right: 15px;
+  color: #000;
+  text-decoration: none;
+}
+/* 0 */
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
