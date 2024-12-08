@@ -90,6 +90,8 @@ nav .tabs .active{
 } */
 .mid-sec{
   position: fixed;
+  height: 100px;
+  z-index: 1;
   background: #fff;
   width: 100%;
   left: 0;
@@ -148,13 +150,14 @@ nav {
   margin-right: 5px;
 }
 
-/* .tabs a {
+.tabs a {
   padding-right: 15px;
   color: #000;
   text-decoration: none;
-} */
+}
 /* 0 */
 .embla {
+  margin-top: 100px;
   overflow: hidden;
 }
 .embla__container {

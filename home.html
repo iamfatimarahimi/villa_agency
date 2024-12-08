@@ -66,16 +66,14 @@
     </header>
     <div class="bottom-section">
       <div class="embla">
-        <div class="embla__viewport">
-          <div class="embla__container">
-            <div class="embla__slide">
-              <img src="Images/assets.jpg" alt="" />
-            </div>
-            <div class="embla__slide">
-              <img src="Images/blog-18.jpg" alt="" />
-            </div>
-            <!-- <div class="embla__slide">Slide 3</div> -->
+        <div class="embla__container">
+          <div class="embla__slide">
+            <img src="Images/assets.jpg" alt="" />
           </div>
+          <div class="embla__slide">
+            <img src="Images/blog-18.jpg" alt="" />
+          </div>
+          <div class="embla__slide">Slide 3</div>
         </div>
         <button class="embla__prev">Prev</button>
         <button class="embla__next">Next</button>
@@ -92,8 +90,8 @@
     <script src="https://unpkg.com/embla-carousel-autoplay/embla-carousel-autoplay.umd.js"></script>
     <script type="text/javascript">
       // Grab wrapper nodes
-      const rootNode = document.querySelector(".embla");
-      const viewportNode = rootNode.querySelector(".embla__viewport");
+      const rootNode = document.querySelector(".embla__container ");
+      // const viewportNode = rootNode.querySelector(".embla__viewport");
 
       // Grab button nodes
       const prevButtonNode = rootNode.querySelector(".embla__prev");
