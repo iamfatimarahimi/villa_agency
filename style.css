@@ -89,15 +89,20 @@ nav .tabs .active{
     color: #fff;
 } */
 .mid-sec{
+  position: fixed;
   height: 100px;
   z-index: 1;
   background: #fff;
   width: 100%;
   left: 0;
   border-top: 1px solid #eeeeee;
+  padding: 0 100px 0 100px;
+  z-index: 2;
 }
 .fixed{
   position: fixed;
+  /* box-shadow:  0px 7px 29px 0px; */
+  box-shadow:rgba(100, 100, 111, 0.2) 0 4px 2px -2px;
   left: 0;
   top: 0;
 }
@@ -113,7 +118,7 @@ nav {
   font-size: 28px;
   font-weight: 800;
   color: #1e1e1e;
-  margin-left: 100px;
+  /* margin-left: 100px; */
 }
 
 .tabs {
@@ -161,6 +166,7 @@ nav {
 }
 /* 0 */
 .embla {
+  position: relative;
   margin-top: 100px;
   overflow: hidden;
 }
@@ -172,7 +178,7 @@ nav {
   min-width: 0;
 }
 .embla__slide img{
-  height: 100%;
+  height: 80%;
   width: 100%;
 }
 /*  */
@@ -187,6 +193,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0.6rem;
+  
   align-items: center;
 }
 .embla__button {
@@ -214,11 +221,29 @@ nav {
 .embla__button:disabled {
   color: var(--detail-high-contrast);
 }
-.embla__button__svg {
-  width: 35%;
-  height: 35%;
+.embla__button--prev{
+  position: absolute;
+  top: 35%;
+  left: 5%;
 }
-.embla__dots {
+.embla__button--next{
+  position: absolute;
+  top: 35%;
+  right: 5%;
+}
+.embla__button--prev , .embla__button--next{
+  background: #3a3e3dcf;
+  z-index: 1;
+  opacity: 0.5;
+  border-radius: 50%;
+}
+.embla__button__svg {
+  
+  width: 50%;
+  height: 50%;
+  color: #fff;
+}
+/* .embla__dots {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -255,4 +280,8 @@ nav {
 }
 .embla__dot--selected:after {
   box-shadow: inset 0 0 0 0.2rem var(--text-body);
+} */
+.Featured{
+  display: grid;
+  
 }

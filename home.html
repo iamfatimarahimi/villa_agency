@@ -48,7 +48,7 @@
           </ul>
         </div>
       </div>
-      <div class="mid-sec">
+      <div id="mid-sec" class="mid-sec">
         <nav>
           <h1>VILLA</h1>
           <ul class="tabs">
@@ -112,26 +112,6 @@
 
     <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
     <script src="https://unpkg.com/embla-carousel-autoplay/embla-carousel-autoplay.umd.js"></script>
-    <script type="text/javascript">
-      // Grab wrapper nodes
-      const rootNode = document.querySelector(".embla");
-      // Grab button nodes
-      const prevButtonNode = rootNode.querySelector(".embla__button--prev");
-      const nextButtonNode = rootNode.querySelector(".embla__button--next");
-
-      const options = { loop: true };
-      // const plugins = [EmblaCarouselAutoplay()];
-      const emblaApi = EmblaCarousel(rootNode, options);
-      prevButtonNode.addEventListener("click", emblaApi.scrollPrev);
-      nextButtonNode.addEventListener("click", emblaApi.scrollNext);
-      window.onscroll = function () {
-        const nav = document.getElementsByTagName("nav");
-        if (window.pageYOffset >= 200) {
-          nav.classList.add("fixed");
-        } else {
-          navbar.classList.remove("fixed");
-        }
-      };
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
